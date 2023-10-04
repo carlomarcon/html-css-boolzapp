@@ -35,6 +35,7 @@ img {
 .color-white {
   background-color: white;
 }
+
 /* Modalità laptop */
 
 #laptop-screen {
@@ -95,6 +96,7 @@ img {
   display: flex;
   flex-direction: column;
   padding: 2rem;
+  height: 80%;
 }
 
 .container-chat div {
@@ -103,4 +105,9 @@ img {
 
 .container-chat div:first-child {
   align-self: flex-end;
+}
+
+.type-message {
+  width: 100%;
+  height: 10%;
 }
