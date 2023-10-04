@@ -90,3 +90,17 @@ img {
 
 .list-users {
 }
+
+.container-chat {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.container-chat div {
+  width: 55%;
+}
+
+.container-chat div:first-child {
+  align-self: flex-end;
+}
