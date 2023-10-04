@@ -153,6 +153,14 @@ nav {
   .right-col {
     width: 90%;
   }
+
+  .left-col nav {
+    justify-content: center;
+  }
+
+  .left-col ul {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 425px) {
