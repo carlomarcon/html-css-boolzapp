@@ -32,6 +32,9 @@ img {
   background-color: blue;
 }
 
+.color-white {
+  background-color: white;
+}
 /* Modalità laptop */
 
 #laptop-screen {
@@ -59,4 +62,31 @@ img {
   /* debug */
   height: 100%;
   width: 66%;
+}
+
+.left-col header {
+  width: 100%;
+  height: 10%;
+  background-color: grey;
+}
+
+.right-col header {
+  /* debug */
+  border: 1px solid black;
+  width: 100%;
+  height: 10%;
+  background-color: grey;
+}
+
+.Notify {
+  height: 10%;
+  width: 100%;
+}
+
+.search-bar {
+  height: 5%;
+  width: 100%;
+}
+
+.list-users {
 }
