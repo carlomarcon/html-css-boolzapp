@@ -26,8 +26,8 @@ a {
 
 img {
   border-radius: 50%;
-  height: 55px;
-  width: 55px;
+  height: 50px;
+  width: 50px;
 }
 
 .color-azul {
@@ -110,12 +110,22 @@ nav {
   height: 10%;
 }
 
-.right-col nav div:first-child img {
+/* .right-col nav div:first-child img {
   float: left;
 }
 
 .right-col nav div:first-child {
   padding-top: 13px;
+} */
+
+nav div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav div:first-child div:nth-child(2) {
+  font-size: 14px;
 }
 
 .Notify {
