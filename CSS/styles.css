@@ -10,6 +10,10 @@ body {
   font-family: "lato" sans-serif;
 }
 
+p {
+  color: #abb2b5;
+}
+
 li {
   display: inline-block;
   list-style-type: none;
@@ -101,9 +105,17 @@ nav {
 
 .right-col header {
   /* debug */
-  border: 1px solid black;
+
   width: 100%;
   height: 10%;
+}
+
+.right-col nav div:first-child img {
+  float: left;
+}
+
+.right-col nav div:first-child {
+  padding-top: 13px;
 }
 
 .Notify {
@@ -138,6 +150,25 @@ nav {
 .search-bar {
   height: 5%;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaeaea;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+}
+
+.search-bar div:first-child {
+  width: 10%;
+  background-color: white;
+}
+
+.search-bar div:nth-child(2) {
+  width: 80%;
+  background-color: white;
 }
 
 .list-users {
@@ -191,7 +222,8 @@ nav {
     display: none;
   }
 
-  .Notify {
+  .Notify,
+  .search-bar {
     display: none;
   }
 }
@@ -203,5 +235,14 @@ nav {
 
   .right-col {
     width: 100%;
+  }
+
+  .right-col nav div:nth-child(3) {
+    display: none;
+  }
+
+  .right-col nav div:first-child {
+    width: 100%;
+    font-size: 24px;
   }
 }
