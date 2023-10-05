@@ -6,9 +6,14 @@
 
 /* common */
 
+body {
+  font-family: "lato" sans-serif;
+}
+
 li {
   display: inline-block;
   list-style-type: none;
+  margin-right: 15px;
 }
 
 a {
@@ -17,8 +22,8 @@ a {
 
 img {
   border-radius: 50%;
-  height: 60px;
-  width: 60px;
+  height: 55px;
+  width: 55px;
 }
 
 .color-azul {
@@ -104,6 +109,30 @@ nav {
 .Notify {
   height: 10%;
   width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.Notify span {
+  text-decoration: underline;
+  color: #abb2b5;
+}
+
+.Notify i {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  line-height: 30px;
+}
+
+.Notify div:first-child {
+  width: 20%;
+  text-align: center;
+}
+
+.Notify div:nth-child(2) {
+  width: 80%;
 }
 
 .search-bar {
@@ -123,6 +152,7 @@ nav {
   flex-direction: column;
   padding: 2rem;
   height: 80%;
+  overflow-y: scroll;
 }
 
 .container-chat div {
@@ -158,6 +188,10 @@ nav {
   }
 
   .left-col ul {
+    display: none;
+  }
+
+  .Notify {
     display: none;
   }
 }
