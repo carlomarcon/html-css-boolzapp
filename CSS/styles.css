@@ -106,6 +106,7 @@ nav {
 .left-col header {
   width: 100%;
   height: 10%;
+  border-right: 1px solid #abb2b59e;
 }
 
 .right-col header {
@@ -200,7 +201,7 @@ nav div:first-child div:nth-child(2) {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border-bottom: 1px solid #abb2b5;
+  border-bottom: 1px solid #abb2b59e;
 }
 
 .chat div:nth-child(2) {
@@ -221,6 +222,7 @@ nav div:first-child div:nth-child(2) {
   margin-bottom: 12px;
   width: 50px;
   text-align: right;
+  margin-left: 65px;
 }
 
 .hidden-chat {
@@ -236,8 +238,8 @@ nav div:first-child div:nth-child(2) {
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  height: 80%;
-  overflow-y: scroll;
+  height: 79%;
+  overflow-x: scroll;
   gap: 12px;
 }
 
@@ -251,19 +253,23 @@ nav div:first-child div:nth-child(2) {
   color: black;
 }
 
+.receive {
+  position: relative;
+}
+
 .receive div,
 .sent div {
   width: 100%;
-  position: relative;
   border-radius: 20px;
 }
 
 .receive span,
 .sent span {
   position: absolute;
-  right: 0;
   font-size: 10px;
   color: #abb2b5;
+  position: relative;
+  left: 90%;
 }
 
 .container-chat div:first-child {
@@ -272,7 +278,7 @@ nav div:first-child div:nth-child(2) {
 
 .type-message {
   width: 100%;
-  height: 10%;
+  height: 11%;
   background-color: #eaeaea;
   display: flex;
   align-items: center;
@@ -295,18 +301,75 @@ nav div:first-child div:nth-child(2) {
   height: 40px;
 }
 
+.forscroll-bar {
+  height: 500px;
+  flex-shrink: 0;
+}
+
 /* Options message */
 
-#options-message {
-  background-color: white;
-  height: 60%;
-  width: 85%;
-  border-radius: 0;
+#option-message {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  right: 10%;
+  top: 115px;
 }
+
+#option-message i {
+  opacity: 50%;
+}
+
+#option-message div {
+  position: absolute;
+  background-color: white;
+  left: -110px;
+  width: 150px;
+  top: 35px;
+  display: none;
+  border: 1px solid #abb2b5;
+}
+
+#option-message:active div,
+#option-message2:active div {
+  display: inline-block;
+}
+
+#option-message2 {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  left: 55%;
+  top: 212px;
+}
+
+#option-message2 i {
+  opacity: 50%;
+}
+
+#option-message2 div {
+  position: absolute;
+  background-color: white;
+  width: 150px;
+  top: 28px;
+  left: -112px;
+  border: 1px solid #abb2b5;
+  display: none;
+}
+
+/* .option-message {
+  background-color: white;
+  width: 10px;
+}
+
+.option-message i {
+  position: absolute;
+  right: 5%;
+} */
 
 /* responsive */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 956px) {
   .container {
     height: 100vh;
     width: 100%;
