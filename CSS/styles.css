@@ -101,6 +101,7 @@ nav {
   /* debug */
   height: 100%;
   width: 66%;
+  position: relative;
 }
 
 .left-col header {
@@ -253,10 +254,6 @@ nav div:first-child div:nth-child(2) {
   color: black;
 }
 
-.receive {
-  position: relative;
-}
-
 .receive div,
 .sent div {
   width: 100%;
@@ -265,7 +262,6 @@ nav div:first-child div:nth-child(2) {
 
 .receive span,
 .sent span {
-  position: absolute;
   font-size: 10px;
   color: #abb2b5;
   position: relative;
@@ -312,8 +308,8 @@ nav div:first-child div:nth-child(2) {
   width: 1px;
   height: 1px;
   position: absolute;
-  right: 10%;
-  top: 115px;
+  right: 8%;
+  top: 101px;
 }
 
 #option-message i {
@@ -339,8 +335,8 @@ nav div:first-child div:nth-child(2) {
   width: 1px;
   height: 1px;
   position: absolute;
-  left: 55%;
-  top: 212px;
+  left: 49%;
+  top: 202px;
 }
 
 #option-message2 i {
