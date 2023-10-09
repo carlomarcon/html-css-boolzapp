@@ -84,10 +84,10 @@ nav {
   height: 80%;
   width: 80%;
   display: flex;
-  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  position: relative;
 }
 
 .left-col {
@@ -101,7 +101,6 @@ nav {
   /* debug */
   height: 100%;
   width: 66%;
-  position: relative;
 }
 
 .left-col header {
@@ -254,6 +253,11 @@ nav div:first-child div:nth-child(2) {
   color: black;
 }
 
+.receive,
+.sent {
+  position: relative;
+}
+
 .receive div,
 .sent div {
   width: 100%;
@@ -266,6 +270,12 @@ nav div:first-child div:nth-child(2) {
   color: #abb2b5;
   position: relative;
   left: 90%;
+}
+
+.receive a,
+.sent a {
+  color: black;
+  text-decoration: none;
 }
 
 .container-chat div:first-child {
@@ -309,7 +319,7 @@ nav div:first-child div:nth-child(2) {
   height: 1px;
   position: absolute;
   right: 8%;
-  top: 101px;
+  top: 5%;
 }
 
 #option-message i {
@@ -335,8 +345,8 @@ nav div:first-child div:nth-child(2) {
   width: 1px;
   height: 1px;
   position: absolute;
-  left: 49%;
-  top: 202px;
+  left: 85%;
+  top: 5%;
 }
 
 #option-message2 i {
